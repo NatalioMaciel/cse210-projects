@@ -23,6 +23,8 @@ public class Word
     }
     public string GetDisplayText()
     {
-        return _isHidden ? "_______" : _text;
+        int lenght = _text.Length;
+        string underscores = new string('_', lenght);
+        return _isHidden ? underscores : _text;
     }
 }
